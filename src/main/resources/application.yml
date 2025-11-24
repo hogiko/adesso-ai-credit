@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: "Adesso AI Credit Service"
+    
+  config:
+    import: "optional:file:.env[.properties]"
+    
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY:OPENAI_API_KEY}
+      
